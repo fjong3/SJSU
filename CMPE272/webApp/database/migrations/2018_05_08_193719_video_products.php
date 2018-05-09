@@ -110,6 +110,13 @@ class VideoProducts extends Migration {
                 "img" => "fiji.png",
                 "url" => "",
                 "company_id" => 1,
+            ],
+            [
+                "name" => "Albuquerque, New Mexico",
+                "description" => "Rising above its associations with the annual hot-air-balloon festival, Albuquerque will this year set out to prove itself as a fully-fledged destination.",
+                "img" => "albuquerque-newMexico.png",
+                "url" => "",
+                "company_id" => 1,
             ]
         ];       
         foreach ($locations as $key=>$location) {
@@ -191,15 +198,7 @@ Note that we will automatically verify our firwmare if you use our service to de
                 "img" => "Firmware Verification.png",
                 "url" => "http://fulbertj.com/pages/FirmwareVerification.php",
                 "company_id" => 3,
-            ],
-            [
-                "name" => "Albuquerque, New Mexico",
-                "description" => "Rising above its associations with the annual hot-air-balloon festival, Albuquerque will this year set out to prove itself as a fully-fledged destination.",
-                "img" => "albuquerque-newMexico.png",
-                "url" => "",
-                "company_id" => 3,
             ]
-
         ];
         foreach ($Services as $key=>$Services ) {
             $id     = DB::table('products')->insertGetId( $Services );
